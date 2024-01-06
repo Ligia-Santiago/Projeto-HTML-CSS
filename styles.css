@@ -23,6 +23,7 @@ header {
     width: 100%;
 }
 #logo {
+    margin-left: 2rem;
     font-family: var(--fonte-curvada);
     font-size: 3rem;
 }
@@ -44,7 +45,7 @@ button:active{
     transform: scale(0.96);
 }
 header #btn-logo{
-    margin-right: .4rem;
+    margin-right: 2rem;
 }
 .home{
     background: linear-gradient(50deg, rgb(67, 99, 128), 70%, aliceblue);
@@ -126,7 +127,7 @@ h2{
     background: var(--background);
     color: white;
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 25px;
     margin: 1rem;
 }
 .card:target {
@@ -144,10 +145,9 @@ h2{
 .card .img img{
     width: 100%;
 }
-.card .content{
-    width: 60%;
-    display: flex;
-    justify-content: right;
+.card p{
+    text-align:left;
+    margin-top: 1rem;
 }
 .about .row{
     display: flex;
@@ -171,7 +171,7 @@ h2{
     position: absolute;
     top: 15%;
     transform: translateY(-50%);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #333;
     background: #fff;
     width: 100%;
@@ -322,9 +322,7 @@ footer .credit span{
         grid-area: arm;
     }
     #cake{
-        grid-area: cake;
-        
-        
+        grid-area: cake;     
     }
     .content{
         grid-area: content;
@@ -354,12 +352,6 @@ footer .credit span{
     .card .content{
         grid-area:text;
     }
-    .card p{
-        text-align: justify;
-        padding: 1.5rem;
-        margin: 1rem;
-    }
-
 }
 @media only screen and (min-width:768px){
     html{
@@ -376,10 +368,6 @@ footer .credit span{
     .card .img{
         padding: 1rem;
         max-height: 28rem
-    }
-   
-    .about .row .video-container h3{
-       height: auto;
     }
     .about .row .video-container{
         flex: .5rem;
@@ -413,7 +401,7 @@ footer .credit span{
     .contact .row form .box{
         font-size: 0.8rem;
     }
-    
+}   
 @media only screen and (min-width:992px){
     html{
         font-size: 1.4rem;
@@ -447,8 +435,7 @@ footer .credit span{
     .about .row .content p{
         padding-top: 2rem;
         font-size: 1rem;
-    }
-    
+    }  
 }
 @media only screen and (min-width: 1200px) {
     html{
@@ -476,7 +463,6 @@ footer .credit span{
         height: 70%;
     } 
     .about .row .video-container h3{
-        top: 40%;
         width: 80%;
     }
     .about .row .content{
@@ -486,5 +472,4 @@ footer .credit span{
     .about .row .content p{
         font-size: 1rem;
     }
-}
 }
